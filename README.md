@@ -26,36 +26,36 @@ docker-compose up --build
   GET запрос к http://0.0.0.0:8000/api/orders/<id> - для получения заказа
 
 * POST запрос к http://0.0.0.0:8000/api/catalog/ - для создания товара  
-`{  
+{  
    "name": "Название товара",  
    "price": 100,  
    "description": "Описание"  
-}`
-  POST запрос к http://0.0.0.0:8000/api/orders/- для создания заказа
-  `{
-    "products": [
-        {
-            "product_id": 1,
-            "quantity": 1
-        }
-    ]
-}`
+}  
+POST запрос к http://0.0.0.0:8000/api/orders/- для создания заказа  
+{  
+    "products": [  
+        {  
+            "product_id": 1,  
+            "quantity": 1  
+        }  
+    ]  
+}  
 
-* PUT запрос к http://0.0.0.0:8000/api/catalog/<id> - для изменения товара
-`{
-   "name": "Новое название товара",
-   "price": 200,
-   "description": "Новое описание"
-} `
-  PUT запрос к http://0.0.0.0:8000/api/orders/<id> - для изменения заказа
-`{
-    "products": [
-        {
-            "product_id": 2,
-            "quantity": 2
-        }
-    ]
-}`
+* PUT запрос к http://0.0.0.0:8000/api/catalog/<id> - для изменения товара  
+{  
+   "name": "Новое название товара",  
+   "price": 200,  
+   "description": "Новое описание"  
+}  
+  PUT запрос к http://0.0.0.0:8000/api/orders/<id> - для изменения заказа  
+{  
+    "products": [  
+        {  
+            "product_id": 2,  
+            "quantity": 2  
+        }  
+    ]  
+}  
 
 * DELETE запрос к http://0.0.0.0:8000/api/catalog/<id> - для удаления товара  
   DELETE запрос к http://0.0.0.0:8000/api/orders/<id> - для удаления заказа
