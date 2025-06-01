@@ -19,10 +19,10 @@ cd gateway_service
 docker-compose up --build     
 ```
 ### Примеры запросов:
-* GET запрос к http://0.0.0.0:8000/api/catalog/ - для получения каталога товаров
+* GET запрос к http://0.0.0.0:8000/api/catalog/ - для получения каталога товаров  
   GET запрос к http://0.0.0.0:8000/api/orders/ - для получения списка заказов
 
-* GET запрос к http://0.0.0.0:8000/api/catalog/<id> - для получения товара
+* GET запрос к http://0.0.0.0:8000/api/catalog/<id> - для получения товара  
   GET запрос к http://0.0.0.0:8000/api/orders/<id> - для получения заказа
 
 * POST запрос к http://0.0.0.0:8000/api/catalog/ - для создания товара
@@ -30,7 +30,7 @@ docker-compose up --build
    "name": "Название товара",
    "price": 100,
    "description": "Описание"
-}
+}  
   POST запрос к http://0.0.0.0:8000/api/orders/- для создания заказа
   {
     "products": [
@@ -46,7 +46,7 @@ docker-compose up --build
    "name": "Новое название товара",
    "price": 200,
    "description": "Новое описание"
-}
+}  
   PUT запрос к http://0.0.0.0:8000/api/orders/<id> - для изменения заказа
   {
     "products": [
@@ -57,7 +57,7 @@ docker-compose up --build
     ]
 }
 
-* DELETE запрос к http://0.0.0.0:8000/api/catalog/<id> - для удаления товара
+* DELETE запрос к http://0.0.0.0:8000/api/catalog/<id> - для удаления товара  
   DELETE запрос к http://0.0.0.0:8000/api/orders/<id> - для удаления заказа
   
 
